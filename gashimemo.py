@@ -17,13 +17,41 @@ def check_heroine(str):
             return True
         case "西　ももか":
             return True
+        case "西 ももか":
+            return True
         case "ももか":
             return True
+        case "北 ひなた":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case "北　ひなた":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case "ひなた":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case "北":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case "南 なぎさ":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case "南　なぎさ":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case "なぎさ":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case "南":
+            print("あー、その子今別の客対応中ですね。")
+            return False
+        case _:
+            print("そんな名前の子いないよ！！")
+            return False
             
 while(True):
     heroine = input("どの子を選ぶ？：")
     if check_heroine(heroine): break
-    else: print("そんな名前の子いないよ！！")
 heroine = "ももか"
 print("ふーん。。。")
 input()
@@ -40,10 +68,12 @@ match select:
         print("「そうだね。。。」")
         input()
         print(text.game_over1)
+        exit()
     case "3":
         print("「え。。。」")
         input()
         print(text.game_over1)
+        exit()
 
 print(text.select2)
 select = input("数字を入力：")
@@ -52,12 +82,14 @@ match select:
         print("「・・・・・ごめん、やっぱ無理。」")
         input()
         print(text.game_over2)
+        exit()
     case "2":
         print(text.scenario3)
     case "3":
         print("「・・・キモッ」")
         input()
         print(text.game_over2)
+        exit()
         
 print(text.select3)
 select = input("数字を入力：")
@@ -68,10 +100,12 @@ match select:
         print("「早すぎ、信じらんない。」")
         input()
         print(text.game_over3)
+        exit()
     case "3":
         print("「ちょっと頭おかしいんじゃないの？」")
         input()
         print(text.game_over3)
+        exit()
 
 print(text.select4)
 select = input("数字を入力：")
@@ -81,10 +115,12 @@ match select:
         print("そういって彼女は教室を飛び出した。")
         input()
         print(text.game_over4)
+        exit()
     case "2":
         print("「そっか、、、」")
         input()
         print(text.game_over4)
+        exit()
     case "3":
         print(text.scenario5)
 
@@ -95,9 +131,29 @@ match select:
         print("「あまいな、思えはもう死んでいる。」")
         input()
         print(text.game_over5)
+        exit()
     case "2":
         print("「雰囲気が台無しだよ。。。」")
         input()
         print(text.game_over5)
+        exit()
     case "3":
         print(text.scenario6)
+
+print(text.select6)
+select = input("数字を入力：")
+match select:
+    case "1":
+        print("「えっ！？」")
+        input()
+        print(text.scenario7)
+    case "2":
+        print("「シンプルにめんどくさい」")
+        input()
+        print(text.game_over6)
+        exit()
+    case "3":
+        print("「わたしは床で寝るからあなたは外で寝てね」")
+        input()
+        exit()
+        print(text.game_over6)
