@@ -58,6 +58,7 @@ print(f"じゃあ {heroine} を落とせるよう頑張ってね。")
 input()
 os.system('cls')
 print(text.scenario1)
+input()
 print(text.select1)
 select = ""
 while(True):
@@ -77,7 +78,7 @@ match select:
         input()
         print(text.game_over1)
         exit()
-
+input()
 print(text.select2)
 select = ""
 while(True):
@@ -96,7 +97,7 @@ match select:
         input()
         print(text.game_over2)
         exit()
-
+input()
 print(text.select3)
 while(True):
     select = input("数字を入力：")
@@ -114,7 +115,7 @@ match select:
         input()
         print(text.game_over3)
         exit()
-
+input()
 print(text.select4)
 while(True):
     select = input("数字を入力：")
@@ -133,7 +134,7 @@ match select:
         exit()
     case "3":
         print(text.scenario5)
-
+input()
 print(text.select5)
 while(True):
     select = input("数字を入力：")
@@ -151,7 +152,7 @@ match select:
         exit()
     case "3":
         print(text.scenario6)
-
+input()
 print(text.select6)
 while(True):
     select = input("数字を入力：")
