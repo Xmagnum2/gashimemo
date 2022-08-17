@@ -5,4 +5,4 @@
 Python 3.10.4
 
 ### 遊び方
-`python gashimemo.py`
+`$ python gashimemo.py`
