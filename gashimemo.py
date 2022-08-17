@@ -2,10 +2,9 @@ import os
 import text
 
 print(text.title);
-
+input()
 print("まず本作のヒロインを選んでね。")
 input()
-
 
 print(text.heroine_desc)
 
@@ -48,7 +47,7 @@ def check_heroine(str):
         case _:
             print("そんな名前の子いないよ！！")
             return False
-            
+
 while(True):
     heroine = input("どの子を選ぶ？：")
     if check_heroine(heroine): break
@@ -60,7 +59,11 @@ input()
 os.system('cls')
 print(text.scenario1)
 print(text.select1)
-select = input("数字を入力：")
+select = ""
+while(True):
+    select = input("数字を入力：")
+    if select in ["1", "2", "3"]: break
+
 match select:
     case "1":
         print(text.scenario2)
@@ -76,7 +79,10 @@ match select:
         exit()
 
 print(text.select2)
-select = input("数字を入力：")
+select = ""
+while(True):
+    select = input("数字を入力：")
+    if select in ["1", "2", "3"]: break
 match select:
     case "1":
         print("「・・・・・ごめん、やっぱ無理。」")
@@ -90,9 +96,11 @@ match select:
         input()
         print(text.game_over2)
         exit()
-        
+
 print(text.select3)
-select = input("数字を入力：")
+while(True):
+    select = input("数字を入力：")
+    if select in ["1", "2", "3"]: break
 match select:
     case "1":
         print(text.scenario4)
@@ -108,7 +116,9 @@ match select:
         exit()
 
 print(text.select4)
-select = input("数字を入力：")
+while(True):
+    select = input("数字を入力：")
+    if select in ["1", "2", "3"]: break
 match select:
     case "1":
         print("「冗談じゃ。。。ないよ。。。」")
@@ -125,7 +135,9 @@ match select:
         print(text.scenario5)
 
 print(text.select5)
-select = input("数字を入力：")
+while(True):
+    select = input("数字を入力：")
+    if select in ["1", "2", "3"]: break
 match select:
     case "1":
         print("「あまいな、思えはもう死んでいる。」")
@@ -141,7 +153,9 @@ match select:
         print(text.scenario6)
 
 print(text.select6)
-select = input("数字を入力：")
+while(True):
+    select = input("数字を入力：")
+    if select in ["1", "2", "3"]: break
 match select:
     case "1":
         print("「えっ！？」")
